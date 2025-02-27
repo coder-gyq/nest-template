@@ -1,0 +1,10 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "第一名",
+    "lastName": "第二名"
+}
+
+### 请求2
+GET http://localhost:3000/users
