@@ -2,10 +2,12 @@ import { Module } from '@nestjs/common';
 import { AppController } from './appController';
 import { AppService } from './appService';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule } from '@nestjs/config';
 import { UsersModule } from './module/userModule';
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
